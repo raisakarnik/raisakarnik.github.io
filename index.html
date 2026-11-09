@@ -1,73 +1,158 @@
 <!DOCTYPE html>
-
 <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raisa Karnik</title>
+<meta name="description" content="Raisa Karnik — Computer Engineering student researching computer vision and autonomous robotics for real-world perception and decision-making.">
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Define title -->
-    <title>Raisa Karnik</title>
+<header class="site-nav">
+  <div class="wrap">
+    <a class="mark" href="#top">RK</a>
+    <nav>
+      <a href="#about">about</a>
+      <a href="#research">research</a>
+      <a href="writing/">writing</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Include favicon. Use, e.g., https://favicon.io/ -->
-    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+<main id="top">
 
-    <!-- Include style sheets -->
-    <link rel="stylesheet" href="main.css" />
+  <!-- ABOUT -->
+  <section id="about" style="border-top:none;">
+    <div class="wrap">
+      <div class="hero">
+        <h1>Raisa Karnik</h1>
+        <p class="role">Computer Engineering student &amp; undergraduate researcher</p>
 
-    <!-- Fonts from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
+        <div class="hero-body">
+          <div class="hero-photo">
+            <!-- Replace src with your own headshot, e.g. media/headshot.jpg -->
+            <img src="media/headshot.jpg" alt="Portrait of Raisa Karnik" onerror="this.parentElement.style.background='var(--surface)'; this.remove();">
+          </div>
+          <div class="hero-text">
+            <p>I'm an undergraduate studying Computer Engineering at Texas A&amp;M University. My research sits at the intersection of computer vision and autonomous robotics, focused on how AI systems can perceive and make decisions in unpredictable, real-world environments rather than controlled, tabletop ones.</p>
+            <p>I'm especially interested in three threads: using multimodal input for more robust decision-making, efficient prediction under uncertainty, and generalizing model behavior to out-of-distribution environments — all toward autonomous systems that can safely perceive and reason within their surroundings.</p>
+            <p>I've pursued this at the Learning and Emerging Networked Systems Laboratory (advised by Dr. Dileep Kalathil and Dr. Srinivas Shakkottai) and the Humanitarian Robotics and AI Laboratory (advised by Dr. Robin Murphy), with internships at Microsoft Research and the NSF CISE REU at UT Austin.</p>
+            <p>Outside the lab, I edit science journalism for the Journal of Young Investigators.</p>
+          </div>
+        </div>
 
-    <!-- Load FontAwesome (for icons) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-    />
+        <p class="contact-line">
+          <a href="mailto:raisak@tamu.edu">email</a>
+          <!-- replace with your real LinkedIn URL -->
+          <a href="https://linkedin.com/in/yourprofile">linkedin</a>
+          <a href="docs/CV.pdf">cv (pdf)</a>
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Load Academicons (for more icons) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
-      integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
-      crossorigin="anonymous"
-    />
-  </head>
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Research</h2>
+        <span class="section-note">projects &amp; publications</span>
+      </div>
+      <!-- Replace the "#" hrefs below with real links to each paper (arXiv, publisher page, etc.) once you have them -->
 
-  <body>
-    <section id="content">
-      <!-- Avatar image -->
-      <img src="Profile.png" alt="Raisa Profile" class="avatar" />
 
-      <!-- Text -->
-      <h1>Raisa Karnik</h1>
-      <p>
-        I am a undergraduate student at Texas A&M University.
-      </p>
-      <p>
-        You once told me that the human eye is god's loneliest creation. How so much of the world passes through the pupil and still it holds nothing. The eye, alone in its socket, doesn't even know there's another one, just like it, an inch away, just as hungry, as empty.
-      </p>
-      <p>
-        Please feel free to get in touch!
-      </p>
+      <div class="entry-group">
+        <h3 class="group-label">Robot Learning &amp; Manipulation</h3>
 
-      <!-- Icons -->
-      <ul class="icons">
-        <li>
-          <a href="" title="E-Mail"><i class="fas fa-envelope"></i></a>
-        </li>
-        <li>
-          <a href="" title="GitHub"><i class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a href="" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </li>
-      </ul>
-    </section>
-  </body>
- 
+        <div class="entry">
+          <p class="entry-title"><a href="https://doi.org/10.26153/tsw/64560">RL Finetuning of Diffusion Policies for Robot Control Tasks</a></p>
+          <p class="entry-meta"><strong>Raisa Karnik</strong>, Xi Liu, Ufuk Topcu, David Fridovich-Keil. NSF CISE REU, UT Austin — advised by Ufuk Topcu, David Fridovich-Keil. Summer Research Scholars 2026 Proceedings, University of Texas at Austin.</p>
+          <p class="entry-desc">Implemented model-free PPO finetuning of diffusion policies and evaluated sample efficiency across Robomimic and Gymnasium environments; found diffusion policy policy optimization (DPPO) consistently more sample-efficient than standard Gaussian PPO, attributable to the robustness of its stochastic denoising process.</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title">Comparing Vision-Language-Action Architectures for Manipulation</p>
+          <p class="entry-meta">Raisa Karnik. Learning and Emerging Networked Systems Laboratory — advised by Dileep Kalathil, Srinivas Shakkottai. 2025–present.</p>
+          <p class="entry-desc">Finetuned and evaluated smolVLA, π0, and GR00T on pick-and-place tasks using LeRobot and SO-101 robots, studying the size-versus-accuracy tradeoff between policies and compute efficiency; found that trials with multiple or out-of-distribution objects saw task completion drop to roughly 50% of baseline — an unrecoverable performance gap that motivates more robust generalization to adjacent tasks.</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title">Latency and Accuracy Tradeoffs in Deployed VLA Models</p>
+          <p class="entry-meta">Raisa Karnik. Microsoft Research — advised by Ganesh Ananthanarayanan. Summer 2025.</p>
+          <p class="entry-desc">Deployed smolVLA and π0 on real image streams (PyTorch, OpenCV, USB/IP) to study latency, accuracy, and size-performance tradeoffs; resulting metrics were used in downstream GPU scheduling applications.</p>
+        </div>
+      </div>
+
+      <div class="entry-group">
+        <h3 class="group-label">Disaster Response &amp; Computer Vision</h3>
+
+        <div class="entry">
+          <p class="entry-title">Uncertainty-Aware Building Damage Assessment</p>
+          <p class="entry-meta">Raisa Karnik. Humanitarian Robotics and AI Laboratory — advised by Robin Murphy. 2023–present.</p>
+          <p class="entry-desc">Used computer vision (PyTorch, TensorFlow, Rasterio, Shapely) to annotate and model road and building damage from post-disaster imagery. Optimized imagery tiling to cut preprocessing time 4x; found via confusion-matrix analysis that annotated and ground-truth labels misaligned increasingly at higher damage severity; modeled epistemic uncertainty (MC dropout) and aleatoric uncertainty (input variance) to cut expected calibration error 90% against an uncalibrated baseline.</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title">Cross-Sensor Uncertainty Quantification in Drone and Satellite Post-Disaster Imagery</p>
+          <p class="entry-meta">Thomas Manzini*, <strong>Raisa Karnik*</strong>, Priyankari Perali, Robin R. Murphy. Under review, AAAI 2027. <span style="font-style: italic;">*equal contribution</span></p>
+          <p class="entry-desc">Built a target function modeling the probability that satellite-derived building damage labels change in coincident drone imagery, as a specialized form of aleatoric uncertainty, to assess whether label disagreement learned from one sensor transfers across sensor-entangled uncertainty. Across 26,806 coincident building views from Hurricanes Harvey, Michael, and Ian, 13 trained architectures outperformed a random baseline by 0.168 AUC.</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title"><a href="#">Looks Can be Deceiving: Annotator and Reviewer Performance Across Imagery Sources in Crowd-Sourced Aerial Damage Assessment.</a></p>
+          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Stephen Johnson, Robin R. Murphy. ACM Conference on Human-AI Complementarity and Alignment (HCOMP), 2026.</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title"><a href="#">A Benchmark Dataset for Spatially Aligned Road Damage Assessment in Small Uncrewed Aerial Systems Disaster Imagery.</a></p>
+          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Robin Murphy. 40th Annual AAAI Conference on Artificial Intelligence (AAAI), 2026.</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title"><a href="#">Non-Uniform Spatial Alignment Errors in sUAS Imagery From Wide-Area Disasters.</a></p>
+          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Mihir Godbole, Hasnat Abdullah, Robin Murphy. International Conference on Robot &amp; Human Interactive Communication (RO-MAN), 2025. <a href="#">[Talk: MIT Lincoln Lab HADR / MORS, 2024]</a></p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title"><a href="https://arxiv.org/abs/2407.17673">CRASAR-U-DROIDs: A Large Scale Benchmark Dataset for Building Alignment and Damage Assessment in Georectified sUAS Imagery.</a></p>
+          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Robin Murphy. arXiv preprint, 2024. <a href="#">[Poster: Texas Regional Robotics Symposium, 2024]</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WRITING teaser -->
+  <section id="writing-teaser">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Writing</h2>
+      </div>
+      <div class="callout">
+        <p>Essays, blog posts, and notes on things I'm thinking about — kept on a separate page.</p>
+        <a class="btn" href="writing/">Read writing →</a>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Raisa Karnik 2026.</span>
+    <span>
+      <a href="mailto:raisak@tamu.edu">email</a>
+      <!-- replace with your real LinkedIn URL -->
+      <a href="https://linkedin.com/in/yourprofile">linkedin</a>
+      <a href="docs/CV.pdf">cv</a>
+    </span>
+  </div>
+</footer>
+
+</body>
 </html>
