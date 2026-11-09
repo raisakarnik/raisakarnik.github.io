@@ -16,9 +16,9 @@
 <header class="site-nav">
   <div class="wrap">
     <nav>
-      <a href="#about">about</a>
-      <a href="#research">research</a>
-      <a href="#writing">writing</a>
+      <a href="#About">About</a>
+      <a href="#Research">Research</a>
+      <a href="#Writing">Writing</a>
     </nav>
   </div>
 </header>
@@ -26,31 +26,27 @@
 <main id="top">
 
   <!-- ABOUT -->
-  <section id="about" style="border-top:none;">
+  <section id="About" style="border-top:none;">
     <div class="wrap">
       <div class="hero">
         <h1>Raisa Karnik</h1>
 
         <div class="hero-body">
           <div class="hero-text">
-            <p>I'm an undergraduate studying Computer Engineering at Texas A&amp;M University. My research sits at the intersection of computer vision and autonomous robotics, focused on how AI systems can perceive and make decisions in unpredictable, real-world environments rather than controlled, tabletop ones.</p>
-            <p>I'm especially interested in three threads: using multimodal input for more robust decision-making, efficient prediction under uncertainty, and generalizing model behavior to out-of-distribution environments — all toward autonomous systems that can safely perceive and reason within their surroundings.</p>
-            <p>I've pursued this at the Learning and Emerging Networked Systems Laboratory (advised by Dr. Dileep Kalathil and Dr. Srinivas Shakkottai) and the Humanitarian Robotics and AI Laboratory (advised by Dr. Robin Murphy), with internships at Microsoft Research and the NSF CISE REU at UT Austin.</p>
-            <p>Outside the lab, I edit science journalism for the Journal of Young Investigators.</p>
+            <p>I'm an undergraduate majoring Computer Engineering at Texas A&amp;M University.</p>
+            <p>My research interests are focused on computer vision and autonomous robotics to ensure systems can perceive and make decisions in unpredictable, real-world environments</p>
+            <p>Outside of research, I like bouldering and hiking!</p>
           </div>
 
           <aside class="hero-side">
             <div class="hero-photo">
-              <!-- Replace src with your own headshot, e.g. media/headshot.jpg -->
-              <img src="media/headshot.jpg" alt="Portrait of Raisa Karnik" onerror="this.parentElement.style.background='var(--surface)'; this.remove();">
+              <img src="docs/Raisa_Karnik_Headshot.png" alt="Portrait of Raisa Karnik" onerror="this.parentElement.style.background='var(--surface)'; this.remove();">
             </div>
             <p class="contact-line">
-              <a href="mailto:raisak@tamu.edu">email</a>
-              <!-- replace with your real LinkedIn URL -->
-              <a href="https://linkedin.com/in/yourprofile">linkedin</a>
-              <a href="docs/CV.pdf">cv</a>
-              <!-- replace with your real Google Scholar URL -->
-              <a href="https://scholar.google.com/citations?user=yourid">google scholar</a>
+              <a href="mailto:raisak@tamu.edu">Email</a>
+              <a href="https://www.linkedin.com/in/raisa-karnik/">Linkedin</a>
+              <a href="docs/Raisa_Karnik_CV.pdf">CV</a>
+              <a href="https://scholar.google.com/citations?user=1kfyykQAAAAJ&hl=en">Google Scholar</a>
             </p>
           </aside>
         </div>
@@ -59,113 +55,94 @@
   </section>
 
   <!-- RESEARCH -->
-  <section id="research">
+  <section id="Research">
     <div class="wrap">
       <div class="section-head">
         <h2>Research</h2>
-        <span class="section-note">projects &amp; publications</span>
       </div>
-      <!-- Replace the "#" hrefs below with real links to each paper (arXiv, publisher page, etc.) once you have them -->
+      <div class="entry-group">
+        <h3 class="group-label">Computer Vision for Disaster Response</h3>
 
+        <div class="entry">
+          <p class="entry-title"><a href="https://arxiv.org/abs/2407.17673">CRASAR-U-DROIDs: A Large Scale Benchmark Dataset for Building Alignment and Damage Assessment in Georectified sUAS Imagery.</a></p>
+          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Robin Murphy.]</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title"><a href="https://arxiv.org/pdf/2512.12128">A Benchmark Dataset for Spatially Aligned Road Damage Assessment in Small Uncrewed Aerial Systems Disaster Imagery.</a></p>
+          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Robin Murphy. AAAI 2026.</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title">Uncertainty-Aware Building Damage Assessment</p>
+          <!-- <p class="entry-meta">Raisa Karnik. Humanitarian Robotics and AI Laboratory — advised by Robin Murphy. 2023–present.</p> -->
+          <p class="entry-desc">Modeled epistemic uncertainty and aleatoric uncertainty to cut expected calibration error 90% against an uncalibrated baseline.</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title"><a href="https://arxiv.org/pdf/2405.06593">Non-Uniform Spatial Alignment Errors in sUAS Imagery From Wide-Area Disasters.</a></p>
+          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Mihir Godbole, Hasnat Abdullah, Robin Murphy. RO-MAN 2025.</p>
+        </div>
+      </div>
 
       <div class="entry-group">
         <h3 class="group-label">Robot Learning &amp; Manipulation</h3>
 
         <div class="entry">
           <p class="entry-title"><a href="https://doi.org/10.26153/tsw/64560">RL Finetuning of Diffusion Policies for Robot Control Tasks</a></p>
-          <p class="entry-meta"><strong>Raisa Karnik</strong>, Xi Liu, Ufuk Topcu, David Fridovich-Keil. NSF CISE REU, UT Austin — advised by Ufuk Topcu, David Fridovich-Keil. Summer Research Scholars 2026 Proceedings, University of Texas at Austin.</p>
-          <p class="entry-desc">Implemented model-free PPO finetuning of diffusion policies and evaluated sample efficiency across Robomimic and Gymnasium environments; found diffusion policy policy optimization (DPPO) consistently more sample-efficient than standard Gaussian PPO, attributable to the robustness of its stochastic denoising process.</p>
+          <p class="entry-meta"><strong>Raisa Karnik</strong>, Xinjie Liu, Ufuk Topcu, David Fridovich-Keil.</p>
+          <!-- <p class="entry-desc">Implemented model-free PPO finetuning of diffusion policies and evaluated sample efficiency across Robomimic and Gymnasium environments; found diffusion policy policy optimization (DPPO) consistently more sample-efficient than standard Gaussian PPO, attributable to the robustness of its stochastic denoising process.</p> -->
         </div>
 
         <div class="entry">
-          <p class="entry-title">Comparing Vision-Language-Action Architectures for Manipulation</p>
-          <p class="entry-meta">Raisa Karnik. Learning and Emerging Networked Systems Laboratory — advised by Dileep Kalathil, Srinivas Shakkottai. 2025–present.</p>
-          <p class="entry-desc">Finetuned and evaluated smolVLA, π0, and GR00T on pick-and-place tasks using LeRobot and SO-101 robots, studying the size-versus-accuracy tradeoff between policies and compute efficiency; found that trials with multiple or out-of-distribution objects saw task completion drop to roughly 50% of baseline — an unrecoverable performance gap that motivates more robust generalization to adjacent tasks.</p>
+          <p class="entry-title">Evaluating Vision-Language-Action Architectures for Generalization</p>
+          <!-- <p class="entry-meta">Raisa Karnik. Learning and Emerging Networked Systems Laboratory — advised by Dileep Kalathil, Srinivas Shakkottai. 2025–present.</p> -->
+          <p class="entry-desc">Tested smolVLA and π0 to study performance with different language instruction phrasing and environmental conditions.</p>
         </div>
 
         <div class="entry">
-          <p class="entry-title">Latency and Accuracy Tradeoffs in Deployed VLA Models</p>
-          <p class="entry-meta">Raisa Karnik. Microsoft Research — advised by Ganesh Ananthanarayanan. Summer 2025.</p>
-          <p class="entry-desc">Deployed smolVLA and π0 on real image streams (PyTorch, OpenCV, USB/IP) to study latency, accuracy, and size-performance tradeoffs; resulting metrics were used in downstream GPU scheduling applications.</p>
-        </div>
-      </div>
-
-      <div class="entry-group">
-        <h3 class="group-label">Disaster Response &amp; Computer Vision</h3>
-
-        <div class="entry">
-          <p class="entry-title">Uncertainty-Aware Building Damage Assessment</p>
-          <p class="entry-meta">Raisa Karnik. Humanitarian Robotics and AI Laboratory — advised by Robin Murphy. 2023–present.</p>
-          <p class="entry-desc">Used computer vision (PyTorch, TensorFlow, Rasterio, Shapely) to annotate and model road and building damage from post-disaster imagery. Optimized imagery tiling to cut preprocessing time 4x; found via confusion-matrix analysis that annotated and ground-truth labels misaligned increasingly at higher damage severity; modeled epistemic uncertainty (MC dropout) and aleatoric uncertainty (input variance) to cut expected calibration error 90% against an uncalibrated baseline.</p>
-        </div>
-
-        <div class="entry">
-          <p class="entry-title">Cross-Sensor Uncertainty Quantification in Drone and Satellite Post-Disaster Imagery</p>
-          <p class="entry-meta">Thomas Manzini*, <strong>Raisa Karnik*</strong>, Priyankari Perali, Robin R. Murphy. Under review, AAAI 2027. <span style="font-style: italic;">*equal contribution</span></p>
-          <p class="entry-desc">Built a target function modeling the probability that satellite-derived building damage labels change in coincident drone imagery, as a specialized form of aleatoric uncertainty, to assess whether label disagreement learned from one sensor transfers across sensor-entangled uncertainty. Across 26,806 coincident building views from Hurricanes Harvey, Michael, and Ian, 13 trained architectures outperformed a random baseline by 0.168 AUC.</p>
-        </div>
-
-        <div class="entry">
-          <p class="entry-title"><a href="#">Looks Can be Deceiving: Annotator and Reviewer Performance Across Imagery Sources in Crowd-Sourced Aerial Damage Assessment.</a></p>
-          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Stephen Johnson, Robin R. Murphy. ACM Conference on Human-AI Complementarity and Alignment (HCOMP), 2026.</p>
-        </div>
-
-        <div class="entry">
-          <p class="entry-title"><a href="#">A Benchmark Dataset for Spatially Aligned Road Damage Assessment in Small Uncrewed Aerial Systems Disaster Imagery.</a></p>
-          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Robin Murphy. 40th Annual AAAI Conference on Artificial Intelligence (AAAI), 2026.</p>
-        </div>
-
-        <div class="entry">
-          <p class="entry-title"><a href="#">Non-Uniform Spatial Alignment Errors in sUAS Imagery From Wide-Area Disasters.</a></p>
-          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Mihir Godbole, Hasnat Abdullah, Robin Murphy. International Conference on Robot &amp; Human Interactive Communication (RO-MAN), 2025. <a href="#">[Talk: MIT Lincoln Lab HADR / MORS, 2024]</a></p>
-        </div>
-
-        <div class="entry">
-          <p class="entry-title"><a href="https://arxiv.org/abs/2407.17673">CRASAR-U-DROIDs: A Large Scale Benchmark Dataset for Building Alignment and Damage Assessment in Georectified sUAS Imagery.</a></p>
-          <p class="entry-meta">Thomas Manzini, Priyankari Perali, <strong>Raisa Karnik</strong>, Robin Murphy. arXiv preprint, 2024. <a href="#">[Poster: Texas Regional Robotics Symposium, 2024]</a></p>
+          <p class="entry-title">Latency and Accuracy Tradeoffs in VLA Models</p>
+          <p class="entry-desc">Deployed smolVLA and π0 to study latency, accuracy, and size-performance tradeoffs.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- WRITING -->
+  <!-- WRITING -->
   <section id="writing">
     <div class="wrap">
       <div class="section-head">
         <h2>Writing</h2>
-        <span class="section-note">essays &amp; notes</span>
       </div>
-
-      <div class="entry-group">
-        <div class="entry">
-          <p class="entry-title"><a href="#">Title of a Post or Essay</a></p>
-          <p class="entry-meta">Month 2026 · short one-line description of what it's about</p>
-        </div>
-        <div class="entry">
-          <p class="entry-title"><a href="#">Another Post Title</a></p>
-          <p class="entry-meta">Month 2026 · short one-line description</p>
-        </div>
-        <div class="entry">
-          <p class="entry-title"><a href="#">An Earlier Post</a></p>
-          <p class="entry-meta">Month 2025 · short one-line description</p>
-        </div>
+ 
+      <div class="writing-grid">
+        <a class="preview-card" href="https://www.jyi.org/2024-january/atelocollagen-in-3d-culture-models-points-to-treatment-of-osteoarthritis" target="_blank" rel="noopener">
+          <div class="preview-img">
+            <img src="https://static1.squarespace.com/static/5443d7c7e4b06e8b47de9a55/659f08b71342dc119569c64e/65a0af564522954f7d177bbd/1724519794765/?format=1500w" alt="" loading="lazy" onerror="this.remove();">
+          </div>
+          <div class="preview-body">
+            <p class="preview-source">Journal of Young Investigators</p>
+            <h3>Atelocollagen in 3D Culture Models Points to Treatment of Osteoarthritis</h3>
+            <!-- <p class="preview-desc">How a 3D culture model incorporating atelocollagen could simulate a potential treatment for inflammation-induced osteoarthritis.</p> -->
+          </div>
+        </a>
+ 
+        <a class="preview-card" href="https://www.jyi.org/2023-august/how-computational-immunology-has-redefined-drug-development" target="_blank" rel="noopener">
+          <div class="preview-img">
+            <img src="https://static1.squarespace.com/static/5443d7c7e4b06e8b47de9a55/63abf9bbcf07713bc0959a0d/64f211ed18c43468d18935da/1693586859992/?format=1500w" alt="" loading="lazy" onerror="this.remove();">
+          </div>
+          <div class="preview-body">
+            <p class="preview-source">Journal of Young Investigators</p>
+            <h3>How Computational Immunology has Redefined Drug Development</h3>
+            <!-- <p class="preview-desc">How machine learning and mathematical modeling are making disease detection, vaccine design, and drug-target prediction faster and more accurate.</p> -->
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
 </main>
-
-<footer>
-  <div class="wrap">
-    <span>© Raisa Karnik 2026.</span>
-    <span>
-      <a href="mailto:raisak@tamu.edu">email</a>
-      <!-- replace with your real LinkedIn URL -->
-      <a href="https://linkedin.com/in/yourprofile">linkedin</a>
-      <a href="docs/CV.pdf">cv</a>
-    </span>
-  </div>
-</footer>
 
 </body>
 </html>
