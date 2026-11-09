@@ -59,17 +59,9 @@ header.site-nav {
 .site-nav .wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.site-nav .mark {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--ink);
-  text-decoration: none;
-  letter-spacing: 0.02em;
+  justify-content: flex-start;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .site-nav nav {
@@ -82,7 +74,8 @@ header.site-nav {
   font-size: 0.9rem;
   color: var(--muted);
   text-decoration: none;
-  padding: 6px 10px;
+  padding: 6px 10px 6px 0;
+  margin-right: 12px;
   border-radius: 3px;
 }
 
@@ -102,27 +95,34 @@ header.site-nav {
   font-weight: 700;
   font-size: clamp(1.9rem, 4vw, 2.5rem);
   line-height: 1.15;
-  margin: 0 0 6px;
-  letter-spacing: -0.01em;
-}
-
-.hero .role {
-  color: var(--muted);
-  font-size: 1rem;
-  font-weight: 500;
   margin: 0 0 24px;
+  letter-spacing: -0.01em;
 }
 
 .hero-body {
   display: flex;
-  gap: 28px;
+  gap: 40px;
   align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hero-text { flex: 1 1 auto; min-width: 0; }
+
+.hero-text p {
+  margin: 0 0 14px;
+  max-width: 58ch;
+}
+
+.hero-text p:last-child { margin-bottom: 0; }
+
+.hero-side {
+  flex: 0 0 auto;
+  width: 150px;
 }
 
 .hero-photo {
-  flex: 0 0 auto;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background: var(--surface);
   background-size: cover;
@@ -137,24 +137,12 @@ header.site-nav {
   display: block;
 }
 
-.hero-text p {
-  position: relative;
-  margin: 0 0 14px;
-  padding-left: 22px;
-  max-width: 58ch;
-}
-
-.hero-text p::before {
-  content: "▹";
-  position: absolute;
-  left: 0;
-  color: var(--accent);
-}
-
-.hero-text p:last-child { margin-bottom: 0; }
-
 .contact-line {
-  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 18px 0 0;
   font-size: 0.9rem;
 }
 
@@ -162,11 +150,14 @@ header.site-nav {
   color: var(--ink);
   text-decoration: none;
   border-bottom: 1px solid var(--rule);
-  margin-right: 18px;
   padding-bottom: 1px;
 }
 
 .contact-line a:hover { border-color: var(--accent); color: var(--accent); }
+
+@media (max-width: 600px) {
+  .hero-body { flex-direction: column-reverse; gap: 24px; }
+}
 
 /* ---------------------------------------------------
    Sections
