@@ -460,3 +460,14 @@ a:focus-visible, .btn:focus-visible {
   font-size: 0.84rem;
   margin: 0;
 }
+
+/* Wide images (logos, banners): show the whole picture instead of cropping it.
+   Add class "contain" to the highlight-img div: <div class="highlight-img contain"> */
+.highlight-img.contain {
+  background: #ffffff;
+  border: 1px solid var(--rule);
+}
+
+.highlight-img.contain img {
+  object-fit: contain;
+}
