@@ -194,8 +194,8 @@ section .section-note {
 
 /* Research / entries */
 .entry-group h3.group-label {
-  font-family: var(--serif);
-  font-size: 0.8rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--accent);
   text-transform: uppercase;
@@ -444,7 +444,7 @@ a:focus-visible, .btn:focus-visible {
 .highlight figcaption { padding-top: 18px; }
 
 .highlight h3 {
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.3;
